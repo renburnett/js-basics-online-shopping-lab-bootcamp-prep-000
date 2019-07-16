@@ -47,13 +47,13 @@ function total() {
 function removeFromCart(item) {
   console.log("HELLO!")
   in_cart = false;
-  for (let i=0; i<cart.length-1; i++){
+  for (let i=0; i<=cart.length-1; i++){
     if (item === cart[i].itemName){
       in_cart = true;
     }
   }
   if (in_cart) {
-    for (let i=0; i<cart.length-1; i++) {
+    for (let i=0; i<=cart.length-1; i++) {
       if (cart[i].itemName === item) {
         cart.splice(i, 1);
         i--;
